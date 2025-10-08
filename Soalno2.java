@@ -35,6 +35,6 @@ public class Soalno2 {
             System.out.println("Ukuran tidak valid!");
         }
 
-        inputKaos.close(); // jangan lupa ditutup
+        inputKaos.close();
     }
 }
