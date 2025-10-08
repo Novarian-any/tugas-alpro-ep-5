@@ -13,13 +13,18 @@ public class Soalno2 {
         int harga;
 
         // Tentukan harga berdasarkan ukuran
-        switch (ukuran) {
-            case "S": harga = 30000; break;
-            case "M": harga = 38000; break;
-            case "L": harga = 45000; break;
-            case "XL": harga = 50000; break;
-            case "XXL": harga = 60000; break;
-            default: harga = 0; break;
+        if (ukuran.equals("S")) {
+            harga = 30000;
+        } else if (ukuran.equals("M")) {
+            harga = 38000;
+        } else if (ukuran.equals("L")) {
+            harga = 45000;
+        } else if (ukuran.equals("XL")) {
+            harga = 50000;
+        } else if (ukuran.equals("XXL")) {
+            harga = 60000;
+        } else {
+            harga = 0;
         }
 
         // Hitung total
@@ -29,6 +34,7 @@ public class Soalno2 {
         } else {
             System.out.println("Ukuran tidak valid!");
         }
-        inputKaos.close();
+
+        inputKaos.close(); // jangan lupa ditutup
     }
 }
